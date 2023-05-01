@@ -295,6 +295,7 @@ flex-wrap: wrap;
 .chapter-towerbridges{
   background-image: linear-gradient(rgb(26, 24, 23) 0%, rgb(26, 22, 31) 60%);
 }
+
 .chapter-towerbridges .towerbridges-image{
   width: 55%;
   box-shadow: 0 8px 6px -7px rgb(19, 18, 19);
@@ -302,7 +303,7 @@ flex-wrap: wrap;
 .chapter-towerbridges-albums{
   display: flexbox;
   justify-content: center;
-  margin: 15px 0 10px;
+  margin: 85px 0 85px;
   height: 100%;
 }
 .chapter-towerbridges-A img{
@@ -313,52 +314,57 @@ padding: 0 10px 0;
   font-size: .8rem;
   letter-spacing: .3rem;
   opacity: .7;
-  margin-bottom: 8px;
   margin-top: 40px;
 }
 .chapter-towerbridges-B img{
-height: 250px;
-width: auto;
-object-fit: contain;
-vertical-align: middle;
-padding: 0 10px 0;
-margin-bottom: 10px;
-flex-wrap: wrap;
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  padding: 0 10px 0;
+  flex-wrap: wrap;
 
+}
+.chapter-towerbridges .owl-carousel{
+width: 50%;
+background-color: #242424;
 }
 .chapter-towerbridges .owl-carousel .owl-item img {
   width: 100%;
-  height: 500px;
+  height: 200px;
   object-fit: scale-down;
 }
 .chapter-towerbridges .owl-carousel .owl-item h2 {
 
+bottom: 0;
+padding: 8px;
+margin: 0 auto;
+
+background-color: rgba(0, 0, 0, 0.808);
 }
-.chapter-towerbridges .owl-carousel{
-  background-image: linear-gradient(rgb(24, 23, 23) 0%, rgb(32, 32, 32) 60%);
+
+
+.chapter-towerbridges a:link{text-decoration: none;}
+.chapter-pgt{
+  background-color: #141414;
 }
+
 
 
 
 
 
-.sub-banner{
-  height: auto;
-  width: 100%;
-  background-color: rgb(7, 7, 7);
-  position: fixed;
-  z-index: 200;
-}
-.sub-banner p{
-  padding: 15px;
-}
-.sub-banner .logo__grid img{
-  height: 30px;
-}
-.sub-banner a:link{
-  text-decoration: none;
-}
 
+
+
+
+.chapter-pgt .chapter-container{
+  min-height: 50vh;
+}
+.chapter-pgt svg{
+  filter: brightness(0) saturate(100%) invert(93%) sepia(96%) saturate(365%) hue-rotate(313deg) brightness(99%) contrast(94%);
+padding: 50px;
+}
 
 
 

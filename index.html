@@ -28,18 +28,33 @@
 
   <body>
     <main>
- 
+
 <div class="sub-banner">
-    <a href="index.html"><p>Will Proctor</p></a>
-    <div class="logo__grid">
-    <a href="https://www.linkedin.com/in/will-proctor-008050242/" target="_blank">
-        <img src="images/li.png" onContextMenu="return false;">
-    </a>
-    <a href="https://www.artstation.com/keyni" target="_blank">
-        <img src="images/as.png" onContextMenu="return false;">
-    </a>
+    <div class="name">
+        
+        <a  href="index.html"><p id="navbar">Will Proctor</p></a>
+
     </div>
-</div>
+    <div class="categories">
+        
+        <div class="owl-carousel owl-theme" id="carouselBANNER">
+            
+            <a href="pgrametry.html"><p><u>Photogrammetry</u></p></a>
+            <a href="#nf"><p>Non-Fiction</p></a>
+            <a href="#ssf"><p>Space Station Facility</p></a>
+            <a href="#bridge"><p>Knight Bridge</p></a>
+            <a href="#towerbridges"><p>Procedural Highbridges</p></a>
+            <a href="#vk"><p>Viking Environments</p></a>
+            <a href="#dneg"><p>DNEG FX</p></a>
+            <a href="#LAG"><p>An Animation</p></a>
+        </div>
+
+    </div>
+</div> 
+
+
+
+
 
 
 <!--Carousel NAV
@@ -253,12 +268,12 @@
     <div class="chapter-container">
         <a id="towerbridges"></a>
     <div class="chapter-container-contents">
-        <h2>highbridge city generator :big WIP project gallery:</h2>
+        <h2>highbridge city generator <i>:WIP project gallery:</i></h2>
 
       
 
 
-        <div class="chapter-towerbridges-A chapter-bridge-albums">
+        <div class="chapter-towerbridges-A chapter-towerbridges-albums">
             <p>Interconnecting towers with a solver for resolving intersecting bridges and towers as it grows</p>
             <img src="projects/higbridge overcity/testrender4.gif">
             <img src="projects/higbridge overcity/testrender5.gif">
@@ -267,31 +282,32 @@
 
 
    
-        <div class="chapter-towerbridges-B chapter-bridge-albums" >
+        <div class="chapter-towerbridges-B chapter-towerbridges-albums" >
             <a href="projects/higbridge overcity/BC_test_render4_0139.effectsResult.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/BC_test_render4_0139.effectsResult.jpg"></a>
             <a href="projects/higbridge overcity/BC_test_render4_0158.effectsResult.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/BC_test_render4_0158.effectsResult.jpg"></a>
             <a href="projects/higbridge overcity/BC_test_render5_0001.effectsResult.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/BC_test_render5_0001.effectsResult.jpg"></a>
-        </div>
-        <div class="chapter-towerbridges-B chapter-bridge-albums" >
-            <img src="projects/higbridge overcity/testrender6.gif">
-            <img src="projects/higbridge overcity/testrender1.gif">
-
-        </div>
-        <div class="chapter-towerbridges-B chapter-bridge-albums" >
-            <a href="projects/higbridge overcity/cull.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/cull.jpg"></a>
-            <a href="projects/higbridge overcity/stonemat.png" data-lightbox="image-1"><img src="projects/higbridge overcity/stonemat.png"></a>
-
-        </div>
-
-
+        </div>     
         <!--Carousel tb-->
-        <div class="owl-carousel owl-theme" id="carouselTB">
+        <div class="owl-carousel owl-theme chapter-towerbridges-albums" id="carouselTB">
             <a href="projects/higbridge overcity/towerWidth.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/towerWidth.jpg"><h2>Demonstration of Tower Width adaptability</h2></a>
             <a href="projects/higbridge overcity/towerHeight.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/towerHeight.jpg"><h2>Demonstration of Tower Height adaptability</h2></a>
             <a href="projects/higbridge overcity/roofHeight.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/roofHeight.jpg"><h2>Demonstration of Roof adaptability</h2></a>
             <a href="projects/higbridge overcity/bridges.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/bridges.jpg"><h2>Demonstration of Bridge adaptability</h2>  </a>
         
         </div>
+        <div class="chapter-towerbridges-B chapter-towerbridges-albums" >
+            <img src="projects/higbridge overcity/testrender6.gif">
+            <img src="projects/higbridge overcity/testrender1.gif">
+
+        </div>
+        <div class="chapter-towerbridges-B chapter-towerbridges-albums" >
+            <a href="projects/higbridge overcity/cull.jpg" data-lightbox="image-1"><img src="projects/higbridge overcity/cull.jpg"></a>
+            <a href="projects/higbridge overcity/stonemat.png" data-lightbox="image-1"><img src="projects/higbridge overcity/stonemat.png"></a>
+
+        </div>
+
+
+   
 
 </div>  
 </div>
@@ -554,7 +570,17 @@
 
 
 
+<!--photogrammetry-->
+<div class="chapter-pgt chapter">
+    <div class="chapter-container">
+        <a id="pgt"></a>
+    <div class="chapter-container-contents">
+        <h2>Phtogrammetry and 3D scanning gallery</h2>
+        <a href="pgrametry.html"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a>
 
+    </div>  
+    </div>
+</div>
 
 
 
@@ -577,8 +603,6 @@
        
         
 var carouselSSF = $("#carouselSSF");        
-        
-        
         carouselSSF.owlCarousel({
             loop:true,
             autoWidth:true,
@@ -604,33 +628,12 @@ var carouselSSF = $("#carouselSSF");
             
         
         });
-var carouselTerrain = $("#carouselTerrain");
 
-        var carouselNAV = $("#carouselNAV");
-        carouselNAV.owlCarousel({
-            
-            
-           items:6,
-            loop:true,
-            autoWidth:true,
-            margin: 4,
-            center:true,
-            startPosition:0,
-            nav:true,
-            navText: [
-                prevIcon,
-                nextIcon
-            ],
-            
-            dots:false,
-            autoplay:false,
-            autoplayTimeout:11500,
-            autoplayHoverPause:true
-            
+
+
+  
         
-        });     
-        
-        
+var carouselTerrain = $("#carouselTerrain");        
         carouselTerrain.owlCarousel({
             
             loop:true,
@@ -660,6 +663,8 @@ var carouselTerrain = $("#carouselTerrain");
              }
         
         });
+
+
 var carouselvk = $("#carouselvk");
         carouselvk.owlCarousel({
             
@@ -691,32 +696,57 @@ var carouselvk = $("#carouselvk");
 
 
 var carouselTB = $("#carouselTB");
-carouselTB.owlCarousel({
-    
-    loop:false,
-    autoWidth:false,
-    center:true,
-    margin: 24,
-    items:1,
-    nav:true,
-    navText: [
-        prevIcon,
-        nextIcon
-    ],
-    lazyLoad:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
+        carouselTB.owlCarousel({
+            
+            loop:false,
+            autoWidth:false,
+            center:true,
+            margin: 24,
+            items:1,
+            nav:true,
+            navText: [
+                prevIcon,
+                nextIcon
+            ],
+            lazyLoad:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
 
-            dots:false,
-        },
-        720:{
+                    dots:false,
+                },
+                720:{
 
-        },
-        }
-    
+                },
+                }
+            
 
-});        
+        });  
+
+
+
+
+var carouselBANNER = $("#carouselBANNER");
+        carouselBANNER.owlCarousel({
+            
+            loop:true,
+            autoWidth:true,
+            center:true,
+            margin: 24,
+            nav:true,
+            navText: [
+                prevIcon,
+                nextIcon
+            ],
+            dots: false,
+
+            
+
+        });  
+
+
+
+
     });
 
 const nextIcon = '<img src="./images/arrow-r.svg" alt="right">';

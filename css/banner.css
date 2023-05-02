@@ -1,0 +1,211 @@
+.banner {
+  background: rgb(5, 5, 5);
+  z-index: 201;
+  max-width: 100%;
+  height: 325px;
+  position: relative;
+  display: block;
+  font-family: 'lato', serif;
+  box-shadow: 0 -100px 64px -135px rgba(245, 222, 179, 0.747) inset;
+}
+h1, p, h3{
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.banner-text{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner h1{
+  width: auto;
+  font-size: 64px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  left: -6px;
+ 
+}
+.banner p{
+  font-size: 22px;
+  font-weight: 320;
+  letter-spacing: 1.1vw;
+  text-align: center;
+  
+}
+
+.showreel{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  cursor: pointer;
+  background-color: rgb(245, 222, 179);
+  padding: 10px 25px 10px;
+  border-radius: 30px;
+}
+.showreel img{
+  filter: brightness(0) ;
+  animation-name: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.banner h3{
+  font-size: 18px;
+  font-weight:500;
+  letter-spacing: .14vw;
+  text-align: center;
+  color: black;
+  font-family: 'Epilogue';
+  position: relative;
+  padding-top: 4px;
+  padding-right: 2px;
+}
+
+
+@keyframes stretch {
+  0% {
+    scale: 1;
+    opacity: .5;
+  }
+  30% {
+    scale:1.2;
+    opacity: 1;
+  }
+  70% {
+    scale:1.1;
+    opacity: 1;
+  }
+  100% {
+    scale: 1;
+    opacity: .5;
+  }
+}
+
+
+
+.logo__grid{
+position: absolute;
+background-color: none;
+width: auto;
+height: auto;
+display: flex;
+right: 0;
+bottom: 0;
+padding: 5px;
+}
+.logo__grid img{
+    height: 40px;
+    padding: 0 10px 0;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(96%) saturate(365%) hue-rotate(313deg) brightness(99%) contrast(94%);
+
+  }
+
+
+
+
+
+
+.sub-banner{
+  width: 100%;
+  --height: 55px;
+  height: var(--height);
+  background-color: rgba(12, 12, 12, 0.9);
+  position: fixed;
+  z-index: 203;
+  overflow: hidden;
+  display: flex;
+  transition: .25s;
+}
+.sub-banner:hover{
+  background-color: rgba(12, 12, 12, 1);
+  transition: .25s;
+}
+
+.name{
+  height: auto;
+  width: 25%;
+  display: flex;
+  align-items: center;
+ 
+} 
+  .name p{
+    font-size: 1rem;
+    text-align: left;
+    position: relative;
+    left: 12.5%;
+  }
+.categories p{
+  width: 100%;
+  padding-top: calc(var(--height)/2);
+  margin-top: -4px;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: .1s;
+}
+.categories{
+  height: auto;
+  width: 50%;
+
+}
+.categories .owl-carousel{
+  width: 100%;
+  height: 100%;
+  
+}
+.categories p:hover{
+  scale: 1.05;
+  opacity: .8;
+  transform: translateY(-2%);
+  transition: .3s;
+}
+
+  .categories .owl-theme .owl-nav{
+    filter: brightness(0) saturate(100%) invert(93%) sepia(96%) saturate(365%) hue-rotate(313deg) brightness(99%) contrast(94%);
+  
+  }
+  .categories .owl-theme .owl-nav [class*='owl-'] {
+    background: none;
+    opacity: .6;
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px -4px purple;
+}
+    .categories .owl-theme .owl-nav [class*='owl-']:hover {
+      background: rgba(255, 255, 255, 0.425);
+      opacity: 1;
+ }
+
+
+
+
+
+
+
+
+
+
+
+  .sub-banner .logo__grid img{
+    height: 30px;
+  }
+  .sub-banner a:link{
+    text-decoration: none;
+  }
+  
+  

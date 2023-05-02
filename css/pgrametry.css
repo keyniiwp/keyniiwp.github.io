@@ -1,0 +1,19 @@
+.chapter{
+display: flexbox;
+position: relative;
+width: 100%;
+background-image: linear-gradient(rgb(17, 17, 17) 60%, rgb(37, 37, 37) 150%);
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 6px;
+}
+
+.chapter img{
+height: 250px;
+width: auto;
+padding: 5px;
+}
+
+
+
